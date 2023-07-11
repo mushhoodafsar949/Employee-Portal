@@ -1,0 +1,66 @@
+<section class="outp">
+  <div class="card shadow">
+    <div style="border-radius: 55px;">
+      <div *ngIf="message!= 'OKTrue' " style="border-radius: 55px;">
+        <div class="formGroup">
+          <div style="display: flex; align-items: center; justify-content: center; width: 100%;">
+            <div style="text-align: center; margin-top: 50px;">
+              <img src="../../../assets/material-symbols_lock-person-outline-sharp.svg" width="70px">
+              <h4 style="font-family: 'Poppins';
+                      font-style: normal;
+                      font-weight: 500;
+                      font-size: 25px;
+                      line-height: 45px;
+                      color: #0E5087;">6 Digit Verfication Code</h4>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; width: 100%;">
+            <div style="text-align: center; width: 100%;">
+              <h5 style="font-family: 'Poppins';
+                      font-style: normal;
+                      font-weight: 200;
+                      font-size: 17px;
+                      line-height: 5px; 
+                      color: #0E5087;">Has Been Sent To Your Email</h5>
+              <h5 style="font-family: 'Poppins';
+                      font-style: normal;
+                      font-weight: 200;
+                      font-size: 16px;
+                      line-height: 38px; 
+                      color: #1EA84E;">example.123@gmail.com</h5>
+              <br>
+              <h6 style="font-family: 'Poppins';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 30px;
+              color: #0E5087;">Enter 6 Digit Code</h6>
+              <ng-otp-input #ngOtpInput (onInputChange)="onOtpChange($event)" *ngIf="showOtpComponent"
+                [config]="config"></ng-otp-input>
+<br>
+              <a style="font-family: 'Poppins';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 10px;
+              color: #0E5087;">Resend Verification Code</a>
+            </div>
+          </div>
+
+          <!-- <li style="margin-bottom:8px"> The OTP will expired in </li>
+          <li> Don't recieve the code? <a href="url">Resend </a></li> -->
+        </div>
+
+        <!-- <div class="d-grid gap-2 col-12 mx-auto" style="margin-top:30px; ">
+          <button (click)="checkcode(ngOtpInput.value)" class="btn " type="button"
+            style="border-radius: 2px;background-color: #3b7fff ; color:white">Verify</button>
+
+        </div> -->
+      <button (click)="func()" type="button">click me</button>
+      </div>
+
+    </div>
+
+
+  </div>
+</section>

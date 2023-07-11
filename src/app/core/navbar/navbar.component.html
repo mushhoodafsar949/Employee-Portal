@@ -1,0 +1,26 @@
+
+    <div class="sidebar-collapse" style="display: flex; align-items: center; justify-content: center; width:150px">
+            <li  [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+                <a [routerLink]='["/ManageEmployees/Holidays"]'><i class="fa fa-bar-chart"></i><span
+                        class="nav-label">Holidays</span></a>
+            </li>
+            <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+                <a [routerLink]='["/ManageEmployees/NewEmployee"]'><i class="fa fa-clock-o"></i><span
+                        class="nav-label">NewEmployee</span></a>
+            </li>
+            <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"
+                >
+                <a [routerLink]='["/ManageEmployees/ProfileVerification"]'><i class="fa fa-search"></i><span class="nav-label">
+                    ProfileVerification</span></a>
+            </li>
+            <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"
+               >
+                <a [routerLink]="['/ManageEmployees/ViewEmployeeProfile']"><i class="fa fa-handshake-o"></i> <span
+                        class="nav-label">ViewEmployeeProfile
+                        </span></a>
+            </li>
+
+    </div>
+
+
+

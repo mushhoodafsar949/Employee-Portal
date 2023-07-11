@@ -1,0 +1,66 @@
+<section class="backgroud">
+  <div class="card shadow">
+    <div style=" vertical-align: middle; position: absolute; top: 20%;">
+      <img src="../../../assets/mdi-user-circle-icon.svg"
+        style="position: absolute; top: -135px; left: 150px; width: 80px;" alt="">
+      <div style="display: flex; align-items:start;  justify-content: start; width: 100%; margin-left:20px;">
+        <img src="../../../assets/nobilityLogo.png" style="width: 66px;
+        height: 51px;" alt="">
+        <h3 style="
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        margin-top: 10px;
+        color: #0E5087;">Nobility RCM</h3>
+      </div>
+      <div style="margin-left: 20px; margin-right: 20px;">
+        <div  >
+          <h3 style="color: #1EA84E;  font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          margin-top: 20px;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 8px;">Welcome To The Employee Portal</h3>
+        <h5 style="color: #0E5087; 
+           font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 27px;">Please Login to your account</h5>
+        </div>
+       
+
+      <form [formGroup]="loginForm" class="m-t" role="form" style="text-align: center; margin-top: 30px;">
+        <div class="form-group"
+          style="display: flex; align-items: center;  border-bottom: 1px solid blue; border-radius: 0%;">
+          <img src="../../../assets/mdi-user-circle-outline-icon.svg" style="width: 20px;" alt="">
+          <input class="form-control input-sm" style="border: none;" [(ngModel)]="loginViewModel.Username"
+            placeholder="Username" formControlName="loginEmail">
+        </div>
+        <div class="form-group"
+          style="display: flex; align-items: center; border-bottom: 1px solid blue; border-radius: 0%;">
+          <img src="../../../assets/mdi-password-check-icon.svg" style="width: 20px;" alt="">
+          <input type="password" class="form-control input-sm" style="border: none;"
+            [(ngModel)]="loginViewModel.Password" placeholder="Password" formControlName="loginPassword">
+        </div>
+        <button type="submit" class="btn btn-primary btn-sm block full-width m-b" style="
+        width: 305px;
+        height: 47px;
+        margin-top: 20px;
+        background: #0E5087;
+        border-radius: 15px;
+        color: #FFFFFF;
+        font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      " (click)="onClick()">
+                Login
+      </button>
+      </form>
+      </div>
+     
+    </div>
+  </div>
+</section>
